@@ -17,7 +17,7 @@ class RBM_CPT_Clients extends RBM_CPT {
 	public $post_args = array(
 		'hierarchical' => true,
 		'supports'     => array( 'title', 'editor', 'author', 'thumbnail' ),
-		'has_archive'  => false,
+		'has_archive'  => true,
 		'rewrite'      => array(
 			'slug'       => 'customer',
 			'with_front' => false,

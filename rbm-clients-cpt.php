@@ -64,8 +64,7 @@ if ( ! class_exists( 'RBM_Clients_CPT' ) ) {
 			$this->setup_constants();
 			$this->load_textdomain();
 			
-			if ( ! class_exists( 'RBM_CPTS' ) ||
-				! class_exists( 'RBM_FieldHelpers' ) ) {
+			if ( ! class_exists( 'RBM_CPTS' ) ) {
 				
 				$this->admin_errors[] = sprintf( _x( 'To use the %s Plugin, %s must be active as either a Plugin or a Must Use Plugin!', 'Outdated Dependency Error', RBM_Clients_CPT_ID ), '<strong>' . $this->plugin_data['Name'] . '</strong>', '<a href="//github.com/realbig/rbm-cpts/" target="_blank">' . __( 'RBM Custom Post Types', RBM_Clients_CPT_ID ) . '</a>' );
 				
